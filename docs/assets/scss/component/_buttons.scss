@@ -1,0 +1,13 @@
+.icon {
+    position: absolute;
+    left: 210px;
+    bottom: -30px;
+
+    &:hover {
+        box-shadow: 1px 1px 35px rgba($success, 100%);
+    }
+
+    @media (max-width:768px) {
+        left: 140px;
+    }
+}
