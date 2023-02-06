@@ -7,6 +7,10 @@ export class AdviceGeneratorService {
 
   constructor(private _http: HttpClient) { }
 
+  /**
+   * @name getAdvice
+   * @returns Observable.
+   */
   public getAdvice(): Observable<any> {
     return this._http.get<any>("https://api.adviceslip.com/advice");
   }

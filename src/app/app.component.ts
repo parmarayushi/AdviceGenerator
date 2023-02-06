@@ -8,10 +8,15 @@ import { AdviceGeneratorService } from './advice-generator.service';
 })
 export class AppComponent {
   public data: any;
+
   constructor(private _adviceGeneratorService: AdviceGeneratorService) {
     this._adviceGeneratorService.getAdvice().subscribe((res) => this.data = res);
   }
 
+  /**
+   * @name getData
+   * @description get the data on click of button.
+   */
   public getData() {
     this._adviceGeneratorService.getAdvice().subscribe((res) => this.data = res);
   }
